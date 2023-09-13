@@ -3,8 +3,8 @@
 -include_lib("eunit/include/eunit.hrl").
 
 
-basic_test() ->
-    Last = [a,b,c],
-    ?assert(c =:= last(Last)),
-    ?assertEqual(c, last(Last)),
+last_tests() ->
+    ?assert(c =:= last([a,b,c])),
+    ?assert(3 =:= last([1,2,3])),
+    ?assertEqual(c, last([a,b,c])),
     ?assertEqual(empty_list, last([])).
