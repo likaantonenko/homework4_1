@@ -1,4 +1,5 @@
 -module(lesson2_task07).
+
 -export([flatten/1, flatten/2, reverse/1, reverse/2]).
 
 reverse(List) -> 
