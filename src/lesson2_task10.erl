@@ -1,4 +1,4 @@
--module(lesson2_task09).
+-module(lesson2_task10).
 -export([encode/1, encode/2, reverse/1, reverse/2]).
 
 reverse(List)->reverse(List,[]).
