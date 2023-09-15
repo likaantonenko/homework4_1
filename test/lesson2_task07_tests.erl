@@ -6,4 +6,3 @@ flatten_test() ->
     ?_assertEqual([], flatten([])),
     ?_assertEqual([1, 2, 3], flatten([1, [2, [3]]])),
     ?_assertEqual([1, 2, 3], flatten([1, [2, [3]], []])).
-    
