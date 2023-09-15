@@ -3,6 +3,6 @@
 -include_lib("eunit/include/eunit.hrl").
 
 flatten_test() ->
-    ?_assertEqual([], flatten([])),
-    ?_assertEqual([1, 2, 3], flatten([1, [2, [3]]])),
-    ?_assertEqual([1, 2, 3], flatten([1, [2, [3]], []])).
+    ?assertEqual([], flatten([])),
+    ?assertEqual([1, 2, 3], flatten([1, [2, [3]]])),
+    ?assertEqual([1, 2, 3], flatten([1, [2, [3]], []])).
