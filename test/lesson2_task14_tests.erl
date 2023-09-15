@@ -3,6 +3,6 @@
 -include_lib("eunit/include/eunit.hrl").
 
 duplicate_test() ->
-    ?_assertEqual([], duplicate([])),
-    ?_assertEqual([1, 1, 2, 2, 3, 3, 4, 4, 5, 5], duplicate([1, 2, 3, 4, 5])),
-    ?_assertEqual(["a", "a", "b", "b", "c", "c"], duplicate(["a", "b", "c"])).
+    ?assertEqual([], duplicate([])),
+    ?assertEqual([1, 1, 2, 2, 3, 3, 4, 4, 5, 5], duplicate([1, 2, 3, 4, 5])),
+    ?assertEqual(["a", "a", "b", "b", "c", "c"], duplicate(["a", "b", "c"])).
