@@ -3,7 +3,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 reverse_test() ->
-    ?_assertEqual([], reverse([])),
-    ?_assertEqual("olleH", reverse("Hello")),
-    ?_assertEqual([5, 4, 3, 2, 1], reverse([1, 2, 3, 4, 5])).
+    ?assertEqual([], reverse([])),
+    ?assertEqual("olleH", reverse("Hello")),
+    ?assertEqual([5, 4, 3, 2, 1], reverse([1, 2, 3, 4, 5])).
     
